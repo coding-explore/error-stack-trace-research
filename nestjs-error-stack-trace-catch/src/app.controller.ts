@@ -9,4 +9,18 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/promise-uncatch')
+  async promiseUncatch() {
+    // return await new Promise((resolve, reject) => {
+    //   // AllExceptionsFilter 客户捕获
+    //   // throw new Error('trigger promise error');
+    //   resolve(true);
+    // });
+    this.triggerPromiseError();
+  }
+  
+  async triggerPromiseError() {
+    throw new Error('triggerPromiseError');
+  }
 }
