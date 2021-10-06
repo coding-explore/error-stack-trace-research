@@ -1,0 +1,16 @@
+lockfileVersion: 5.3
+
+specifiers:
+  callsites: ^4.0.0
+
+dependencies:
+  callsites: registry.nlark.com/callsites/4.0.0
+
+packages:
+
+  registry.nlark.com/callsites/4.0.0:
+    resolution: {integrity: sha1-gBTOpP7f5oGjDi99LVV92VgIqSo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/callsites/download/callsites-4.0.0.tgz}
+    name: callsites
+    version: 4.0.0
+    engines: {node: '>=12.20'}
+    dev: false
